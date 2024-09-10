@@ -1,0 +1,155 @@
+body, html {
+  background-color: #d2cae3;
+  border: 15px solid #592577; /* add this line */
+box-sizing: border-box; /* add this line to ensure the border doesn't affect the layout */
+  
+}
+
+body, p, input, select, textarea, button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div, p {
+  color: #592577;
+  text-shadow: 1px 1px 1px #f2f2f2;
+}
+
+form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #d2cae3;
+  text-shadow: 1px 1px 0 #f2f2f2;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #592577, inset -5px -5px 10px #f2f2f2;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #592577, inset -1px -1px 2px #f2f2f2;
+}
+
+button {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #f2f2f2, 5px 5px 20px #592577;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #f2f2f2, 2px 2px 5px #592577;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #592577, inset -1px -1px 2px #f2f2f2;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #592577;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
+
+img{
+    width: 250px;
+    height: 320px;
+    display: block;
+    margin: 10px auto 0 auto; /* Reduce margin-top from 20px to 10px */
+    padding-top: 20px;
+  }
+
+  /* Add media queries for responsive design */
+@media only screen and (max-width: 768px) {
+  /* Tablet and mobile devices */
+  body {
+    font-size: 14px;
+  }
+  form {
+    width: 240px;
+  }
+  .segment {
+    padding: 24px 0;
+  }
+  button, input {
+    font-size: 14px;
+    padding: 12px;
+  }
+  img {
+    width: 200px;
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Mobile devices */
+  body {
+    font-size: 12px;
+  }
+  form {
+    width: 200px;
+  }
+  .segment {
+    padding: 20px 0;
+  }
+  button, input {
+    font-size: 12px;
+    padding: 10px;
+  }
+  img {
+    width: 160px;
+    height: 200px;
+  }
+}
